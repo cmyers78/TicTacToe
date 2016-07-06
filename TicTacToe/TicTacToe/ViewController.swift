@@ -37,20 +37,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for (index, values) in valuesArray.enumerate() {
-            
-            if values == "x" {
-                if let button = self.view.viewWithTag(index) as? UIButton {
-                    button.setImage(xImage, forState: .Normal)
-                print(index)
-                }
-            } else {
-                if let button = self.view.viewWithTag(index) as? UIButton {
-                    button.setImage(oImage, forState: .Normal)
-                print(index)
-                }
-            }
-        }
+        self.loadImages()
+        
         
 //        self.buttonZero.setImage(xImage, forState: .Normal)
 //        self.buttonOne.setImage(oImage, forState: .Normal)
@@ -63,6 +51,24 @@ class ViewController: UIViewController {
 //        self.buttonEight.setImage(xImage, forState: .Normal)
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func loadImages() {
+        for (index, values) in valuesArray.enumerate() {
+            
+            if values == "x" {
+                if let button = self.view.viewWithTag(index) as? UIButton {
+                    button.setImage(xImage, forState: .Normal)
+                    print(index)
+                }
+            } else {
+                if let button = self.view.viewWithTag(index) as? UIButton {
+                    button.setImage(oImage, forState: .Normal)
+                    print(index)
+                }
+            }
+        }
+
     }
 
 }
