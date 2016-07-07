@@ -40,6 +40,67 @@ class ViewController: UIViewController {
         self.loadImages()
         
         
+            self.buttonZero.transform = CGAffineTransformMakeScale(0.1, 0.1)
+            UIView.animateWithDuration(6.0,
+                                   delay: 0.5,
+                                   usingSpringWithDamping: 0.2,
+                                   initialSpringVelocity: 8.0,
+                                   options: UIViewAnimationOptions.AllowUserInteraction,
+                                   animations: {
+                                    self.buttonZero.transform = CGAffineTransformIdentity
+                                    }, completion: nil)
+        
+        self.buttonTwo.transform = CGAffineTransformMakeScale(0.1, 0.1)
+        UIView.animateWithDuration(6.0,
+                                   delay: 0.5,
+                                   usingSpringWithDamping: 0.2,
+                                   initialSpringVelocity: 8.0,
+                                   options: UIViewAnimationOptions.AllowUserInteraction,
+                                   animations: {
+                                    self.buttonTwo.transform = CGAffineTransformIdentity
+                                    }, completion: nil)
+        
+        self.buttonFour.transform = CGAffineTransformMakeScale(0.1, 0.1)
+        UIView.animateWithDuration(6.0,
+                                   delay: 0.5,
+                                   usingSpringWithDamping: 0.2,
+                                   initialSpringVelocity: 8.0,
+                                   options: UIViewAnimationOptions.AllowUserInteraction,
+                                   animations: {
+                                    self.buttonFour.transform = CGAffineTransformIdentity
+                                    }, completion: nil)
+        
+        self.buttonFive.transform = CGAffineTransformMakeScale(0.1, 0.1)
+        UIView.animateWithDuration(6.0,
+                                   delay: 0.5,
+                                   usingSpringWithDamping: 0.2,
+                                   initialSpringVelocity: 8.0,
+                                   options: UIViewAnimationOptions.AllowUserInteraction,
+                                   animations: {
+                                    self.buttonFive.transform = CGAffineTransformIdentity
+                                    }, completion: nil)
+        
+        self.buttonSix.transform = CGAffineTransformMakeScale(0.1, 0.1)
+        UIView.animateWithDuration(6.0,
+                                   delay: 0.5,
+                                   usingSpringWithDamping: 0.2,
+                                   initialSpringVelocity: 8.0,
+                                   options: UIViewAnimationOptions.AllowUserInteraction,
+                                   animations: {
+                                    self.buttonSix.transform = CGAffineTransformIdentity
+                                    }, completion: nil)
+        
+        self.buttonEight.transform = CGAffineTransformMakeScale(0.1, 0.1)
+        UIView.animateWithDuration(6.0,
+                                   delay: 0.5,
+                                   usingSpringWithDamping: 0.2,
+                                   initialSpringVelocity: 8.0,
+                                   options: UIViewAnimationOptions.AllowUserInteraction,
+                                   animations: {
+                                    self.buttonEight.transform = CGAffineTransformIdentity
+                                    }, completion: nil)
+    
+        
 //        self.buttonZero.setImage(xImage, forState: .Normal)
 //        self.buttonOne.setImage(oImage, forState: .Normal)
 //        self.buttonTwo.setImage(xImage, forState: .Normal)
