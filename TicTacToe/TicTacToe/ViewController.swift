@@ -40,8 +40,8 @@ class ViewController: UIViewController {
         self.loadImages()
         
         
-            self.buttonZero.transform = CGAffineTransformMakeScale(0.1, 0.1)
-            UIView.animateWithDuration(6.0,
+        self.buttonZero.transform = CGAffineTransformMakeScale(0.1, 0.1)
+        UIView.animateWithDuration(6.0,
                                    delay: 0.5,
                                    usingSpringWithDamping: 0.2,
                                    initialSpringVelocity: 8.0,
